@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>图片搜索</title>
+
+		<style type = "text/css">
+            body{
+				height:100%; 
+				width:100%;  
+				margin:0; 
+				padding:0;    
+			}
+
+			.top{
+				width: 100%;
+				height: 40px;
+			}
+
+			.menu{
+				width: 20%;
+				font-size: 17px;			
+				float: right;
+				padding-top: 20px;
+				text-align:center;
+			}
+		
+			a{
+				text-decoration:none;
+			}
+			
+			.middle{
+				text-align:center;
+				width:100%; 
+				height:100px;
+				margin-top:100px;
+				font-size: 0px;
+			}
+
+            .input{
+				border: 2px solid #4e6ef2;
+				width:474px;
+				height:44px;
+				font-size:17px;
+				padding-left: 10px;
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
+			}
+
+            .submit{
+				background-color: #4e6ef2;
+				height:50px;
+				line-height: 44px;
+				width: 100px;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+				font-size:17px;
+				color:white;
+				border:none
+			}
+			.myimage{
+				width:275px;
+				height:90px;
+				padding-top: 25px;
+				padding-bottom: 15px;
+			}
+
+			.hyperlink{
+				font-size: 17px;
+				color: white;
+			}
+        </style>
+    </head>
+
+    <body background="background.png">
+		
+		<div class = "top">	
+			<div class = "menu" >
+				<a href="index.html" style="color: white;">百度搜索&nbsp; </a>
+			</div>
+			
+		</div>
+		
+		
+		<div class = "middle">
+			<form action="https://image.baidu.com/search/index">
+            
+            	<a href="https://www.baidu.com/s?wd=百度热搜" target="_blank"  align="center">
+               		<img src="baiduimage.png" alt="Baidu" class = "myimage">
+            	</a>
+            	<br>
+
+				<input type = "hidden" name="tn" value="baiduimage" >
+				<input type = "text" class = "input" name="word" >
+				<input type = "submit" class = "submit" value="百度一下" >
+            </form>
+        </div>	
+        
+		<div align="center" style="bottom:0;margin-top:100px;">
+
+			<div style = "font-size:17px;color: white;">	
+				<p>热门搜索：
+				<a href="https://image.baidu.com/search/index?tn=baiduimage&word=壁纸" class = "hyperlink">壁纸&nbsp;</a>
+				<a href="https://image.baidu.com/search/index?tn=baiduimage&word=头像" class = "hyperlink">头像&nbsp;</a>	
+				<a href="https://image.baidu.com/search/index?tn=baiduimage&word=手抄报" class = "hyperlink">手抄报</a>
+				<a href="https://image.baidu.com/search/index?tn=baiduimage&word=樱花" class = "hyperlink">樱花</a>	
+				</p>	
+			</div>
+	
+		</div>
+        
+    </body>
+</html>

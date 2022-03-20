@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>高级搜索</title>
+
+		<style type = "text/css">
+            body{
+				height:100%; 
+				width:100%;  
+				margin:0; 
+				padding:0;    
+			}
+
+			.top{
+				width: 100%;
+				height: 40px;
+			}
+			.menu{
+				width: 20%;
+				font-size: 17px;				
+				float: right;
+				padding-top: 20px;
+				text-align:center;
+			}
+		
+			a{
+				text-decoration:none;
+			}
+			
+			.middle{
+				text-align:center;
+				width:100%; 
+				height:100px;
+				margin-top:100px;
+				/* font-size: 0px;  */
+				padding-top: 30px;
+			}
+
+            .input{
+				border: 2px solid #4e6ef2;
+				width:225px;
+				height:44px;
+				font-size:17px;
+				padding-left:10px;
+				border-top-right-radius: 8px;	
+				border-bottom-right-radius: 8px;
+				margin-right: 20px;
+			}
+
+            .img{
+				align: middle;
+				border:0;  
+				width:275px;
+				height:140px;
+			}
+
+            .submit{
+				background-color: #4e6ef2;
+				height:50px;
+				line-height: 44px;
+				width: 100px;
+				border-radius: 8px;
+				font-size:19px;
+				color:white;
+				border:none
+			}
+			
+			.text{
+				border: 2px solid #4e6ef2;
+				padding-top: 10.5px;
+				padding-bottom: 12.5px;
+				font-size:17px;			
+				border-right: 0px;
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px ;
+				text-align:center;
+			}
+        </style>
+    </head>
+
+    <body>
+		<div class = "top">	
+			<div class = "menu" >
+				<a href="index.html" style="color: rgb(137, 143, 146);">百度搜索&nbsp; </a>
+				
+			</div>
+			
+		</div>
+		
+		
+		<div class = "middle">
+            <form action="https://baidu.com/s">
+            	<a href="https://www.baidu.com/s?wd=百度热搜" target="_blank"  align="center">
+               		<img src="baidu.png" alt="Baidu" class="img">
+            	</a>
+            	<br>
+				<!-- 包含全部关键词 -->
+				<span class = "text">
+					包含全部关键词:
+				</span>			
+				<input type = "text" class = "input" name="q1" >
+				<!-- 包含完整关键词 -->
+				<span class = "text">
+					包含完整关键词:
+				</span>	
+				<input type = "text" class = "input" name="q2" >
+				<br>
+				<br>
+				<span class = "text">
+					包含任意关键词:
+				</span>	<input type = "text" class = "input" name="q3" >
+				<span class = "text">
+					不包含的关键词:
+				</span>	
+				<input type = "text" class = "input" name="q4" >
+				<br>
+				<br>
+				<input type = "submit" class = "submit" value="高级搜索" >
+				
+            </form>
+        </div>	
+        
+	
+        
+    </body>
+</html>
+
